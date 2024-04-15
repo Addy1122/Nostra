@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+    
+    <script src="js/index.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Salebar-->
+
+<section id="offer-page" class="offer-page">
+<h2>Sign Up and <b>GET 20% OFF</b> for your first Order</h2>
+<i id="close-page"class=" fa-solid fa-xmark pt-1 cursor-pointer" style="color: #ffffff;"></i>
+</section>
+<!--navbar-->
+<section class="navbar">
+    <a href="index.html"><h1 class="text-2xl"><b>Nostra</b></h1></a>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="w-6 h-6 md:hidden">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+    <ul class=" flex gap-20 hidden  md:flex">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="#new-arrivals">New Arrival</a>
+      </li>
+      <li>
+        <a href="#most-wanted-section">Most Wanted</a>
+      </li>
+      <li>
+        <a href="collection.html">Collections</a>
+      </li>
+      <li>
+        <a  href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </section>
+  <section id="sidenav" class="bg-slate-700 fixed z-20 top-0 transition-all duration-1000 " style="width:50%; height:100vh;right:-50%">
+    <div class="text-right  p-5">
+      <p id="closenav" class="cursor-pointer text-white">X</p>
+    </div>
+
+    <ul class=" flex flex-col items-center gap-10 text-white">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#new-arrivals">New Arrival</a>
+        </li>
+        <li>
+          <a href="#most-wanted-section">Most Wanted</a>
+        </li>
+        <li>
+          <a href="collection.html">Collections</a>
+        </li>
+        <li>
+          <a  href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+  </section>
+  <section >
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-slate-800 pl-5 border rounded-sm">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+        <form class="">
+            <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-white dark:text-white">Your email</label>
+                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+            </div>
+            <div class="mt-5">
+                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+                <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+            </div>
+            <div class="sm:col-span-2 mt-5">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+                <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+            </div>
+            <button type="submit" class="border border-black bg-cyan-500 text-white p-3 mt-5 rounded-md hover:bg-white hover:text-black">Send message</button>
+        </form>
+    </div>
+  </section>
+  <section class="news-letter">
+    <h2 >Join our News Letter</h2>
+    <h3 >Signup for our email newspaper to get exclusive discounts, updates, and more</h3>
+    <input type="text" class="border border-black p-2 m-3" style="width: 80%;">
+    <br>
+    <button class="news-button">Subscribe</button>
+</section>
+<section class="copy-rights" >
+    <div class="copy-rights_sec">
+    <h1>Nostra</h1>
+    <p>Stand out with signature creations. All designs © Nostra, crafted for your unique style.</p>
+    <div class="copy-image w-10 flex gap-5 mt-5">
+        <img src="./Images/instagram (1).png">
+        <img src="./Images/facebook.png">
+        <img src="./Images/twitter.png">
+
+    </div>
+    <p>@ 2024 Nostra.com</p>
+</div>
+   </section>
