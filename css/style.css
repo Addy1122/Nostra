@@ -325,12 +325,13 @@ body::-webkit-scrollbar {
     margin-bottom:1vw;
  }
  .copy-rights{
+    padding: 20px;
     margin-top: 3vw;
    background-color: #1D232C;
 
  }
  .copy-rights_sec{
-    padding: 1vw;
+   
     color: white;
    
 
