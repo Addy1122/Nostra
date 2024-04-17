@@ -12,22 +12,27 @@ body::-webkit-scrollbar {
 .offer-page{
     background-color: #1D232C;
     color: #E2E1E1;
-    padding: 5px;
+    padding: 0.5vw;
     display: flex;
+    flex-direction: row;
+    align-items: baseline;
     justify-content: center;
-    gap:10%;
+    gap:7%;
     font-size: 1.5vw;
  
 }
 .navbar{
-    margin-top: 5px;
-    padding: 20px;
+    
+    padding: 15px;
     display: flex;
+    flex-direction: row;
+    align-items:center;
     justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 10;
     background-color: white;
+    border-bottom: solid rgb(209, 204, 204) 1px;
 }
 
 .main{
@@ -74,10 +79,10 @@ body::-webkit-scrollbar {
 }
 .slide-button{
     margin-top: 1vw;
-    border-radius: 8%;
+    border-radius: 10px;
     background-color: white;
-    padding: 10px;
-    transition: all 0.3s ease;
+    padding: 5px;
+    /* transition: all 0.3s ease; */
     font-size: 1vw;
 }
 .slide-button:hover{
@@ -255,9 +260,10 @@ body::-webkit-scrollbar {
    
 .heart{
     position: absolute;
-    width: 15%;
+    width: 10%;
     bottom: 5%;
     right: 5%;
+    cursor: pointer;
 }
 
 
@@ -324,7 +330,7 @@ body::-webkit-scrollbar {
 
  }
  .copy-rights_sec{
-    padding: 40px;
+    padding: 1vw;
     color: white;
    
 
@@ -338,28 +344,29 @@ body::-webkit-scrollbar {
     margin-top: 1vw;
  }
  /*  */
-
+.collection{
+    border-bottom: 1px solid rgb(209, 204, 204);
+}
  .collection-items{
     display: flex;
 
 }
 
 .left-section{
-    padding: 40px;
-    flex-basis: 25%;
+    padding: 20px;
+    flex-basis: 15%;
     position: relative;
-    font-size: 2vw;
+    
 }
 
 .product-section{
-    flex-basis: 75%;
+    flex-basis:85%;
     position: relative;
 }
 
 .line {
-    border:solid black;  
-    height: 100%; 
-    margin: 0 20px ; 
+    border: 0.5px solid rgb(209, 204, 204);  
+    height: 100%;  
     position: absolute;
     top: 0px;
     right: 0px
@@ -373,18 +380,22 @@ body::-webkit-scrollbar {
 }
 
 .right-section{
-    padding: 10px;
+    padding: 20px;
+  
     
 }
 
 .cloths{
-    margin-top: 2vw;
+   
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     flex-wrap: wrap;
-    gap:2%;
-    font-size:1vw;
+    gap:2% ;
+    font-size:0.5vw;
     cursor: pointer;
+}
+.cloths p{
+    font-size:1vw;
 }
 .cloths-item{
     width: 20vw;

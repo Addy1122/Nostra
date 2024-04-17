@@ -19,83 +19,84 @@
 </head>
 <body>
 
-<section class="offer-page">
+<section id="offer-page" class="offer-page">
     <h2>Sign Up and <b>GET 20% OFF</b> for your first Order</h2>
     <i id="close-page"class=" fa-solid fa-xmark pt-1 cursor-pointer" style="color: #ffffff;"></i>
 </section>
 <section class="navbar">
-    <a href="index.html"><h1 class="text-2xl"><b>Nostra</b></h1></a>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-6 h-6 md:hidden">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-    
-        <ul class=" flex gap-20 hidden  md:flex">
-          <li>
-            <a  href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="#new-arrivals">New Arrival</a>
-          </li>
-          <li>
-            <a  href="#most-wanted-section">Most Wanted</a>
-          </li>
-          <li>
-            <a href="collection.html">Collections</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
+  <a href="index.html"><h1 style="font-size: 2vw;"><b>Nostra</b></h1></a>
+  <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+    class="w-6 h-6 md:hidden">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+  </svg>
+
+  <ul class=" flex hidden  md:flex" style="gap: 5vw;">
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="#new-arrivals">New Arrival</a>
+    </li>
+    <li>
+      <a href="#most-wanted-section">Most Wanted</a>
+    </li>
+    <li>
+      <a href="collection.html">Collections</a>
+    </li>
+    <li>
+      <a  href="contact.html">Contact</a>
+    </li>
+  </ul>
 </section>
+<!--sidenav-->
 <section id="sidenav" class="bg-slate-700 fixed z-20 top-0 transition-all duration-1000 " style="width:50%; height:100vh;right:-50%">
-    <div class="text-right  p-5">
-      <p id="closenav" class="cursor-pointer text-white">X</p>
-    </div>
+  <div class="text-right  p-5">
+    <p id="closenav" class="cursor-pointer text-white">X</p>
+  </div>
 
-    <ul class=" flex flex-col items-center gap-10 text-white">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="#new-arrivals">New Arrival</a>
-        </li>
-        <li>
-          <a href="#most-wanted-section">Most Wanted</a>
-        </li>
-        <li>
-          <a href="collection.html">Collections</a>
-        </li>
-        <li>
-          <a  href="contact.html">Contact</a>
-        </li>
-      </ul>
+  <ul class=" flex flex-col items-center gap-10 text-white">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="#new-arrivals">New Arrival</a>
+      </li>
+      <li>
+        <a href="#most-wanted-section">Most Wanted</a>
+      </li>
+      <li>
+        <a href="collection.html">Collections</a>
+      </li>
+      <li>
+        <a  href="contact.html">Contact</a>
+      </li>
+    </ul>
 
-  </section>
+</section>
       <!--collection-->
 <div class="collection">
 
         <div class="collection-items">
             <div class="left-section">
                
-                <h3 class="occasion text-2xl font-semibold">Occasion</h3>
-                <div class="text-xl">
-                    <input type="checkbox" value="summer" onclick="filterCollections(this)"> Summer <br>
+                <h3 class="occasion  font-bold" style="font-size: 1.2vw;">Categories</h3>
+                <div style="font-size: 1vw;" >
+                    <input type="checkbox" value="summer" onclick="filterCollections(this)"> Floral <br>
                     <input type="checkbox" value="party" onclick="filterCollections(this)"> Party <br>
                     <input type="checkbox" value="floral" onclick="filterCollections(this)"> Beach 
 
                 </div>
                
-                <h3 class="colors text-2xl font-semibold"> Colors </h3>
-                <div class="text-xl">
-                <input type="checkbox" value="red"> Red <br>
+                <h3 class="colors font-bold"style="font-size: 1.2vw;"> Colors </h3>
+                <div style="font-size: 1vw;">
+                    <input type="checkbox" value="blue"> Red <br>
                     <input type="checkbox" value="blue"> Blue <br>
                     <input type="checkbox" value="white"> White <br>
                     <input type="checkbox" value="green"> Green
                 </div>
 
-                <h3 class="arrivals text-2xl font-semibold"> Arrivals </h3>
-                <div class="text-xl">
+                <h3 class="arrivals  font-bold"style="font-size: 1.2vw;"> Arrivals </h3>
+                <div style="font-size: 1vw;">
                 <input type="checkbox" value="new"> New <br>
                 <input type="checkbox" value="old"> Old 
                 </div>
@@ -103,8 +104,8 @@
             </div>
 
             <div class="right-section">
-                <div  class="navbar-search" style="align-items: center;">
-                    <input type="text" class="border border-black p-2 " placeholder="Search" style="width: 100%;">
+                <div  class="navbar-search" >
+                    <input type="text" class="border border-0.5px p-2" placeholder="Search" style="width:100%; border: solid rgb(98, 97, 97) 1px;">
                    
                 </div>
 
@@ -171,7 +172,7 @@
                  </div>
                 </div>
             </div>
-        ></div>
+        </div>
 </div>
         
 
